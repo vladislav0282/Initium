@@ -1,0 +1,1 @@
+export const API_URL = "https://test-data.directorix.cloud/task1"

@@ -1,0 +1,123 @@
+// // class="bg-black/50 fixed top-0 right-0 left-0 bottom-0"
+// //class="wind w-[100%] max-w-[448px] h-[593px] absolute top-[216px] rounded bg-white left-1/2 -translate-x-1/2"
+// .wrap {
+// 	background: #263238;
+// 	opacity: 50%;
+// 	position: fixed;
+// 	top: 0;
+// 	right: 0;
+// 	left: 0;
+// 	bottom: 0;
+// }
+
+.modal {
+	border-radius: 20px;
+	width: 100%;
+	max-width: 448px;
+	height: 593px;
+	// position: absolute;
+	// background-color: #ffffff;
+	// top: 50%;
+	// left: 50%;
+	// transform: translate(-50%, -50%);
+}
+
+.modal_wrap {
+	margin: 44px 40px 0 40px;
+}
+
+
+.row-group {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.row{
+	height: 56px;
+  width: 368px;
+
+}
+
+
+.row input{
+	padding: 0;
+	margin: 0;
+	
+	
+}
+
+
+
+span {
+	font-family: "Roboto";
+	font-weight: 500;
+	font-size: 24px;
+	color: #231f20;
+}
+
+.input {
+	margin: 40px 40px 0 40px;
+	border: 1px solid #bbc5c9;
+}
+
+input {
+	display: flex;
+	border-right: none;
+	outline: none;
+	margin: 14px;
+	font-family: "Roboto";
+	font-weight: 400;
+	font-size: 16px;
+	color: #bbc5c9;
+}
+
+.button {
+	margin: 48px 40px 40px 0;
+	display: flex;
+	justify-content: end;
+	flex-direction: row;
+}
+
+.mat-mdc-form-field-error{
+	text-align: end;
+}
+
+// .mat-flat-button :hover{
+// 	background-color: #3C7CF8;
+// }
+
+// button .submit :disabled{
+// background-color: #D8DEE9;
+// color: #FFFFFF;
+// }
+
+
+
+
+// .cancel {
+// 	margin-top: 48px;
+// 	margin-left: 161px;
+// 	padding: 14px 22px 14px 22px;
+// 	width: max-content;
+// }
+
+// .cancel button {
+// 	color: #2f67d5;
+// 	font-size: 18px;
+// }
+
+// .save {
+// 	margin-right: 40px;
+// }
+
+// .save button {
+// 	width: 100%;
+// 	height: 100%;
+// 	background-color: #d8dee9;
+// 	color: #ffffff;
+// 	padding: 0 16px 0 16px;
+// 	border-radius: 37px;
+// 	font-size: 18px;
+// }

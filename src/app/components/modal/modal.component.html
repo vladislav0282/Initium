@@ -1,0 +1,75 @@
+<div class="modal">
+	<form [formGroup]="form" (ngSubmit)="submit()">
+		
+			<div class="modal_wrap">
+				<span>Новый клиент</span>
+				<div class="row-group">
+					<mat-form-field 
+					class="row" appearance="outline">
+						<mat-label>Имя</mat-label>
+						<input formControlName="name"  matInput placeholder="Имя" />
+						<mat-error>Минимальное количество символов: 2</mat-error>
+					</mat-form-field>
+					
+					<mat-form-field class="row"  appearance="outline">
+						<mat-label>Фамилия</mat-label>
+						<input formControlName="surname" matInput placeholder="Фамилия" />
+						<mat-error>Минимальное количество символов: 2</mat-error>
+					</mat-form-field>
+					<mat-form-field class="row"  appearance="outline">
+						<mat-label>E-mail</mat-label>
+						<input formControlName="email" matInput placeholder="E-mail" />
+						<mat-error>Некорректный адрес</mat-error>
+					</mat-form-field>
+					<mat-form-field class="row" appearance="outline">
+						<mat-label>Телефон</mat-label>
+						<input formControlName="phone" matInput placeholder="Телефон" />
+						<mat-error>Некорректный номер телефона</mat-error>
+					</mat-form-field>
+				</div>
+			</div>
+			<div class="button">
+				<button (click)="modalClose()" mat-button>Отмена</button>
+				<button *ngIf="this.form.valid"  type="submit" mat-flat-button
+				>Сохранить</button>
+				<button *ngIf="!this.form.valid" disabled type="submit"   
+				[ngStyle]="{ 'color':'#FFFFFF'}"
+				mat-flat-button
+				>Сохранить</button>
+			</div>
+			
+			
+	
+			<!-- <div class="button">
+				<div class="flex cancel"> -->
+					<!-- <button (click)="modalService.close()" type="button">Отмена</button> -->
+				<!-- </div> -->
+				<!-- <div class="example-button-row"> -->
+				  <!-- <button mat-flat-button disabled>Disabled</button> -->
+				<!-- </div> -->
+				<!-- <div class="save mt-[48px]">
+					<button type="submit">Сохранить</button>
+				</div> -->
+			<!-- </div> -->
+	
+	</form>
+</div>
+	
+
+
+<!-- <div class="wrap" (click)="modalService.close()"></div> -->
+<!--  -->
+
+<!-- <div class="input rounded">
+            <input formControlName="name" type="text" placeholder="Имя">
+        </div> -->
+<!-- <div class="input rounded">
+            <input formControlName="surname" type="text" placeholder="Фамилия">
+        </div> -->
+<!-- <div  class="input rounded">
+            <input formControlName="email" type="text" placeholder="E-mail">
+        </div> -->
+<!-- <div class="input rounded"> -->
+
+<!-- <input formControlName="phone" type="text" placeholder="Телефон"> -->
+<!-- </div> -->

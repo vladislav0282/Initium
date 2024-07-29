@@ -1,0 +1,87 @@
+.body-default{
+margin: 10px 16px 16px 16px;
+}
+.body-default__inner{
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+.body-default__inner_tools{
+    display: flex;
+    gap: 8px;
+    padding: 10px 0 10px 15px;
+    height: 36px;
+}
+
+.body-default__inner_base{
+    
+}
+
+
+th,td{
+    
+    width: 280px;
+    height: 47px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    color: #263238;
+}
+
+table th{
+    color: #2F4C97;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 600;
+
+}
+
+table th:first-child {
+    max-width: 57px;
+    padding-left: 21px ;
+ }
+
+table td:first-child {
+   max-width: 57px;
+   padding-left: 21px ;
+}
+
+// tr {
+//     border: 1px solid black;
+//     border-collapse: collapse;
+//   }
+
+
+table td {
+    border-top: 1px solid rgba(171, 171, 172, 0.16) 
+}
+
+table th:nth-child(6){
+width: calc(1888px - (280px*4 + 57px));
+}
+
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background:#E2EEFF;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+}
+
+button{
+    width: 36px;
+    height: 36px;
+}
+
+button:active{
+    background:#B5D3FF;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+}
+ 

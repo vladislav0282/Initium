@@ -1,0 +1,39 @@
+<div class="body-default">
+	<div class="body-default__inner">
+		<div class="body-default__inner_tools">
+			<button (click)="openModal()" 
+			><img *ngIf="default" src="/plas_default.png" alt="plus-default" /></button>
+			<button
+			(click)="openDeleteModal()"
+			>
+				<img *ngIf="default" src="/Vector_default.png" alt="bascet-default"/>
+			</button>
+		</div>
+		<div class="class=body-default__inner_base">
+			<table>
+				<thead>
+					<tr>
+						<th>
+							<!-- <input type="checkbox" name="" id="" /> -->
+						</th>
+						<th class="text-start">Имя</th>
+						<th class="text-start">Фамилия</th>
+						<th class="text-end">E-mail</th>
+						<th class="text-end">Телефон</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody >
+					<tr *ngFor="let user of this.dataService.users; let i = index" [ngClass]="{'bg-black': user, 'bg-slate-500': !user}">
+						<td><input type="checkbox" (change)="toggleSelection(user, $event)" name="" id=""/></td>
+						<td class="text-start">{{ i + 1 }} {{ user.name }}</td>
+						<td>{{ user.surname }}</td>
+						<td class="text-end">{{ user.email }}</td>
+						<td class="text-end">{{ user.phone }}</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
